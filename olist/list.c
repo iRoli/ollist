@@ -36,7 +36,7 @@ struct node *create_node(int id)
 }
 
 /*	definition of insert_in_order
- *	Description: Insert a node in order, the list is ordered from less to greater. Allows to insert duplicated id's.
+ *	Description: Insert a node in order, the list is ordered from greater to less. Allows to insert duplicated id's.
  *	Parameters: A pointer to the list an a pointer to the node being inserted.
  *	Returns: A pointer to the top of the list.
  */
@@ -83,7 +83,7 @@ struct node *insert_in_order(struct node *list, struct node *new_node)
 /*	definition of insert
  *	Description: Just calls the create_node and insert_in_order functions.
  *	Parameters: A pointer to the linked list, and the value of id_member.
- *	Returns: A pointer to the top of the linekd list.
+ *	Returns: A pointer to the top of the linked list.
  */
 struct node *insert(struct node *list, int id)
 {
